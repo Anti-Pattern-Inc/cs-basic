@@ -29,5 +29,6 @@ void rot13(char *src, char *dst)
                 c = c - 13;
         }
         dst[i] = c;
+        dst[i+1] = '\0';
     }
 }
