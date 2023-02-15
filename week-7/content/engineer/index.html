@@ -1,0 +1,2376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title & description -->
+  <title>engineed（エンジニード） | AWS認定保持者限定プラットフォーム</title>
+  <meta content="engineed（エンジニード）は、AWS認定保持者限定プラットフォームです。AWS認定を有しているAWSエンジニアは登録をすることで独自の実技試験を受けたり、企業からのスカウトを受け取ったりすることができます。" name="description">
+  <!-- ogp -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="https://info.engineed.io/engineer/">
+  <meta name="twitter:image" content="https://info.engineed.io/engineer/img/engineed_engineer_ogp.jpg">
+  <meta property="fb:app_id" content="353575456678623" />
+  <meta property="og:url" content="https://info.engineed.io/engineer/">
+  <meta property="og:title" content="engineed（エンジニード） | AWS認定保持者限定プラットフォーム">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="engineed（エンジニード）は、AWS認定保持者限定プラットフォームです。AWS認定を有しているAWSエンジニアは登録をすることで独自の実技試験を受けたり、企業からのスカウトを受け取ったりすることができます。">
+  <meta property="og:image" content="https://info.engineed.io/engineer/img/engineed_engineer_ogp.jpg">
+  <!-- /engineer/ページを正規化 -->
+  <link rel="canonical" href="https://info.engineed.io/engineer/">
+  <!-- フォント -->
+  <link 
+    rel="stylesheet"
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" 
+    crossorigin="anonymous"
+    as="font"
+  >
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="img/engineedFavicon.png">
+  <!-- スタイルシート -->
+  <link 
+    rel="stylesheet" 
+    rel="preload"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous"
+    as="style"
+  >
+  <link 
+  rel="stylesheet" 
+  rel="preload"
+  href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+  crossorigin="anonymous"
+  as="style"
+  >
+  <link 
+    rel="stylesheet"
+    rel="preload"
+    href="css/style.css"
+    as="style"
+  >
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TPVQW28');</script>
+  <!-- End Google Tag Manager -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        let signUpCtas = document.getElementsByClassName('sign-up-cta');
+        for (let cta of signUpCtas) {
+            const original_uri = cta.href;
+            const converted_uri = original_uri + location.search;
+            cta.href = converted_uri;
+        }
+    });
+  </script>
+</head>
+
+<body class="bg-light">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPVQW28" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header id="header" class="w-100">
+    <nav class="navbar navbar-expand navbar-light text-white fixed px-2 px-lg-3" id="nav">
+      <a class="navbar-brand mr-0" href=""><img src="img/engineedLogoNav.png" alt="engineed" class="logo-image" id="engineedLogo" loading="lazy"></a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="modalOpen()">
+        <span class="navbar-toggler-icon" id="navbarTogglerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+      </button> -->
+      <div class="collapse navbar-collapse justify-content-end pr-0 pr-lg-3" id="navbarSupportedContent">
+        <div class="d-none d-md-block">
+          <p class="small my-3 mr-4"><span id="recruiter">採用担当者の方は</span><a href="https://info.engineed.io/" target="_blank" class="employer">こちら</a></p>
+        </div>
+        <div class="nav-cta mr-1 mr-sm-3" onclick="" data-toggle="modal" data-target="#registrationFormModal">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta" id="">
+                <span class="emphasis btn-font">新規登録</span>
+            </div>
+          </a>
+        </div>
+        <div class="nav-cta" onclick="" data-toggle="modal" data-target="#registrationFormModal">
+          <a href="https://engineed.io/auth/login" class="w-100 h-100">
+            <div class="cta login-cta" id="">
+              <span class="emphasis btn-font">ログイン</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="nav-toggle" id="navToggle" onclick="indexShow()">
+    <span class="inner-line" id="lineTop"></span>
+    <span class="inner-line" id="lineMiddle"></span>
+    <span class="inner-line" id="lineBottom"></span>
+    <p class="footer-menu-text">menu</p>
+  </div>
+  <div class="menu" id="menu">
+    <div class="menu-cta d-md-flex d-lg-none justify-content-end">
+      <div>
+        <p class="small my-md-3 mr-4"><span id="recruiter">採用担当者の方は</span><a href="https://info.engineed.io/" target="_blank" class="employer">こちら</a></p>
+      </div>
+      <div class="d-flex justify-content-center justify-content-sm-end">
+        <div class="nav-cta mr-3" onclick="" data-toggle="modal" data-target="#registrationFormModal">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta" id="">
+                <span class="emphasis btn-font">新規登録</span>
+            </div>
+          </a>
+        </div>
+        <div class="nav-cta" onclick="" data-toggle="modal" data-target="#registrationFormModal">
+          <a href="https://engineed.io/auth/login" class="w-100 h-100">
+            <div class="cta login-cta" id="">
+              <span class="emphasis btn-font">ログイン</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="index mb-5">
+      <h3>INDEX</h3>
+      <ul class="list-style-none">
+        <li>
+          <a href="#businessModel" onclick="anchor()">
+            サービスの仕組み
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#charms" onclick="anchor()">
+            独自のAWS実技試験
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#examples" onclick="anchor()">
+            副業・転職例のご紹介
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#usersVoices" onclick="anchor()">
+            利用者の声
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#certification" onclick="anchor()">
+            AWSパートナーネットワークの活用
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#mission" onclick="anchor()">
+            engineedの理念
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#flow" onclick="anchor()">
+            engineedご利用のながれ
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#clients" onclick="anchor()">
+            engineedを利用中の企業
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#faq" onclick="anchor()">
+            よくある質問
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="d-inline">
+              <path id="arrow" d="M7,0V7H0" transform="translate(0 5.303) rotate(-45)" fill="none" stroke-width="2"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <main>
+    <section id="mainVisual" class="text-white">
+      <div class="container mv-container py-3">
+        <h1 class="pl-lg-5 mb-0 text-center">
+          <span class="fv-large-points">AWSエンジニア</span>のための<br>
+          <span class="fv-large-points text-white">副業</span><span class="fv-large-points text-white">転職</span>スカウトサービス
+        </h1>
+        <div class="d-md-flex justify-content-around text-center my-4">
+          <div class="p-3 px-lg-5">
+            <img src="img/01-1.svg" alt="実務に近い実技試験であなたのスキルを可視化" loading="lazy" width="82px" height="124px">
+            <p class="mt-3">
+              実務に近い実技試験で<br>
+              あなたのスキルを可視化
+            </p>
+          </div>
+          <div class="p-3 px-lg-5">
+            <img src="img/02-1.svg" alt="副業で新しい領域にスキルの幅を広げる" loading="lazy" width="101px" height="124px">
+            <p class="mt-3">
+              副業で新しい領域に<br>
+              スキルの幅を広げる
+            </p>
+          </div>
+          <div class="p-3 px-lg-5">
+            <img src="img/03-1.svg" alt="AWSの経験が少ない方もチャレンジOK" loading="lazy" width="145px" height="118px">
+            <p class="mt-3">
+              AWSの経験が少ない方も<br>
+              チャレンジOK
+            </p>
+          </div>
+        </div>
+        <div class="fv-cta mx-auto">
+          <p class="mb-3 text-center">【 AWS認定保持者限定！まずは30秒簡単登録 】</p>
+          <div class="nav-cta mx-auto">
+            <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+              <div class="cta registration-cta">
+                <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="fixed-bottom mb-2 footer-cta text-center d-lg-none" id="footerCta">
+        <div class="nav-cta mx-auto">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta m-0">
+              <span class="emphasis btn-font">新規登録はこちら</span>
+            </div>
+          </a>
+        </div>
+      </div> -->
+    </section>
+
+    <section id="businessModel">
+      <div class="container mt-md-5">
+        <h2><span class="sub-title">サービスの仕組み</span><br>企業から直接AWSの<br class="d-block d-lg-none">お仕事スカウトがもらえる</h2>
+        <div class="inner shadow-sm">
+          <h3 class="text-center">副業・業務委託・転職など<br class="d-block d-lg-none">様々な業務形態での希望設定が可能</h3>
+          <img src="img/illust-pc.png" alt="engineedのビジネスモデル図" width="80%" class="d-none d-md-block mx-auto my-5" loading="lazy">
+          <img src="img/illust-sp.png" alt="engineedのビジネスモデル図" width="94%" class="d-block d-md-none mx-auto my-5" loading="lazy">
+          <p class="text-center">
+            プロフィールの他にengineed独自の実務に近いAWSの実技試験を受講する事で、<br class="d-none d-sm-block">スキルを可視化し、実力にマッチしたより良い条件でスカウトを獲得する事ができます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="charms">
+      <div class="container mt-md-5">
+        <h2><span class="sub-title">独自のAWS実技試験</span><br>独自の「AWS実技試験」で<br class="d-sm-none">魅力的なスカウトを獲得</h2>
+        <div class="inner shadow-sm">
+          <div class="d-md-flex d-block mb-3 mb-sm-4">
+            <p class="number-heading font-weight-bold text-center mb-2 mb-md-0">01</p>
+            <h3 class="text-center text-md-left w-100 mb-0">AWS実技試験テストでスキルを可視化 &amp; <br class="d-sm-none">腕試し！<br class="d-none d-sm-block"><span class="d-md-block text-md-right">&#043;現役AWSエンジニアの<br class="d-sm-none">詳細フィードバックレポート</span></h3>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-6 mb-3">
+              <div class="mb-4 mb-lg-3">
+                <p class="mb-3">
+                  <span class="significant">engineedの最大の魅力は実務に近い実技試験でスキルを可視化し、<br class="d-none d-lg-block">企業へ自分のリアルな実力をアピールできる事です。</span>
+                </p>
+                <ul class="pl-4 text-justify">
+                  <li>
+                    実務に近い多数の実技試験をご用意
+                  </li>
+                  <li>
+                    アーキテクチャ設計 &amp; 環境構築の試験で、実業務で利用していないサービスにもチャレンジ可能
+                  </li>
+                  <li>
+                    現役AWSエンジニアが複数人で評価&フィードバック
+                  </li>
+                </ul>
+              </div>
+              <div class="d-lg-none mb-3 mb-lg-0">
+                <p class="text-center mb-3">▼実技試験フィードバックレポートイメージ</p>
+                <img src="img/feedback-report.jpg" alt="" class="w-50 mx-auto d-block" loading="lazy">
+              </div>
+              <p class="text-justify mb-3">
+                フィードバックは、「AWS Well-Architected フレームワーク」に基づいて行っております。ベストプラクティスに沿って必要な知識を網羅的にキャッチアップすることが可能なため、自身のスキルチェックや腕試しにも最適です。<br>
+              </p>
+            </div>
+            <div class="d-none d-lg-block col-lg-6 mx-auto">
+              <p class="text-center mb-3 small">▼実技試験フィードバックレポートイメージ</p>
+              <img src="img/feedback-report.jpg" alt="" class="w-50 mx-auto d-block" loading="lazy">
+            </div>
+          </div>
+          <div class="mb-5">
+            <h3 class="text-center mb-4">2022年4月現在、提供中の実技試験</h3>
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <p class="mb-3">
+                  EC Site Migration Based on Amazon EC2 (Basic)
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge01.png" alt="" class="w-100">
+                  </div>
+                  <div class="col-6 pr-0 pl-1 pl-md-2">
+                    <img src="img/badge02.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <p class="mb-3">
+                  Event Site Launch Based on Amazon ECS (Basic)
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge03.png" alt="" class="w-100">
+                  </div>
+                  <div class="col-6 pr-0 pl-1 pl-md-2">
+                    <img src="img/badge04.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 mt-4 mt-md-0">
+                <p class="mb-3">
+                  WordPress Site Migration Based on Amazon EC2
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge05.png" alt="" class="w-100">
+                  </div>
+                  <div class="col-6 pr-0 pl-1 pl-md-2">
+                    <img src="img/badge06.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 mt-4 mt-md-5">
+                <p class="mb-3">
+                  Hybrid Cloud Based on AWS Direct Connect
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge07.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 mt-4 mt-md-5">
+                <p class="mb-3">
+                  Infrastructure trouble-shooting on AWS Vol.1
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge08.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 mt-4 mt-md-5">
+                <p class="mb-3">
+                  Infrastructure trouble-shooting on AWS Vol.2
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge09.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 mt-4 mt-md-5">
+                <p class="mb-3">
+                  Contact Page Migration Based on Serverless (Basic)
+                </p>
+                <div class="row mx-0">
+                  <div class="col-6 pl-0 pr-1 pr-md-2">
+                    <img src="img/badge10.png" alt="" class="w-100">
+                  </div>
+                  <div class="col-6 pr-0 pl-1 pl-md-2">
+                    <img src="img/badge11.png" alt="" class="w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex d-block mb-3 mb-sm-4">
+            <p class="number-heading font-weight-bold text-center mb-2 mb-md-0">02</p>
+            <h3 class="text-center mb-0">実技試験をするから、<br class="d-sm-none">仕事とスキルのマッチ度が高い</h3>
+          </div>
+          <div class="row align-items-center mb-4 mb-sm-5">
+            <div class="col-md-12 mx-auto ">
+              <p class="text-justify">
+                実務に近い診断を受験することで、自分の実力を企業にアピールできます。<br>
+                そのため、スキル的な実力を理解した企業からのアプローチとなり、マッチ度の高いスカウトが獲得する事ができます。
+              </p>
+            </div>
+          </div>
+          <h4 class="mb-4 pt-4 center-heading font-weight-bold">【Twitter】実技試験を受講した<br class="d-block d-md-none">ユーザーの声</h4>
+          <div class="swiper-custom-parent">
+            <div class="swiper-container">
+              <div class="swiper-wrapper mb-3 h-auto text-justify">
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/spanobari1/status/1502634441310883840" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1502634441310883840.jpg" alt="@spanobari1" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        HIRA<br><span>@spanobari1</span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      試しに受験してみたけどなかなか面白かった<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/bigen_1925/status/1501932634334588930" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1501932634334588930.jpg" alt="@bigen_1925" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        びげん<br><span>@bigen_1925</span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      <span>#engineed </span>の構築課題やってるんやけど、やっぱめっちゃいい実践練習になるな〜<br><br>
+                      最近のCDKどんどん使いやすくなってんだな〜っていう知識のアップデートと、CodePipeline(というかECSのCodeDeploy?)って実際使ってみるとめっちゃめんどいんやな〜とかの学びを得た
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Terralienjp/status/1490734484081496066" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1490734484081496066.jpg" alt="@Terralienjp" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Terralien<br><span>@Terralienjp<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      AWS認定保有者限定転職サービス<span> #engineed </span>さんの実技試験を受けてみた。想像よりいい評価で驚いているところです。よくわかんなくて適当に構成した部分をきっちり指摘されていたのでめちゃくちゃ勉強になりました。タダで実践レベルの試験受けてプロに評価レポートしてもらえるのは割とすごいと思う。
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/hypercreater199/status/1486682919309504514" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1486682919309504514.jpg" alt="@hypercreater199" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        STRONG FUMI<br><span>@hypercreater199<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      engineedの試験を受けてみた。実務経験が全然ないけど、結構今まで試験を受けてきた中で知りえた知識を使えて、楽しかった。<br>
+                      とはいえ、想定できたけど、どのように適用すべきかがわからなかった部分があったので、他の試験も受けて力をつけていきたい。<br>
+                      <span>https://info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Y0u281/status/1484858985832665094" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1484858985832665094.jpg" alt="@Y0u281" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Yuta🐁<br><span>@Y0u281<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      <span>https://info.engineed.io/engineer/ #engineed #AWS</span><br>
+                      WordPressサイトの移行問題で今の会社に通じる所があったので出来は悪くなかった。<br>
+                      ちょいちょい設定漏れがあったのでそこは反省。
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/yu_ya0227/status/1483689762959798272" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1483689762959798272.jpg" alt="@yu_ya0227" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ゆーや<br><span>@yu_ya0227<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      <span>https://info.engineed.io/engineer/ #engineed #AWS</span><br><br>
+                      資格はとれたものの、どのくらいスキルが身についてるか不安だったので、<br>
+                      実際のAWSエンジニアの方からフィードバックをもらえ、それが自信にもつながりました！
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/hundyhundy/status/1482731382904623104" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1482731382904623104.jpg" alt="@hundyhundy" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ハンディ<br><span>@hundyhundy<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      普段使っていないサービスの構成を考えるとあって思ったよりも難しかったけど、勉強になる部分は多かった<br>
+                      実力不足を感じたのでもっと研鑽しよう<br>
+                      <span>#engineed #aws</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                
+                
+               
+                
+                
+                
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/11Solo_mon11/status/1467107979883610112" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1467107979883610112.jpg" alt="@11Solo_mon11" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ソロもん<br><span>@11Solo_mon11<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span><br>
+                      認定試験だけじゃ思い浮かばない、実際の検討として考える形式であったため、実務経験がない私にとってかなりよい経験となりました。
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/teltelbose1973/status/1450080684907761671?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1450080684907761671.jpg" alt="@teltelbose1973" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        teltelbose1973<br><span>@teltelbose1973<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      10月14日(木) engineed事務局様より環境構築試験の実技試験結果レポートを頂戴しました。<br>
+                      設計試験を何とか通過し、いざ環境構築試験を始めたのが8月21日(土)。一カ月半、大変お世話になりました。<br>
+                      7月15日(木)にengineedを始めて三カ月、早いものですね。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/njiro3/status/1448555074960052232?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1448555074960052232.jpg" alt="@njiro3" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        njiro<br><span>@njiro3<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      engineed の EC2 の設計試験を受けました。<br>
+                      今まで、構築・運用しか経験がなかったので、<br>
+                      良い経験になりました。<br>
+                      フィードバック後に今後の方針を engineed 側と相談して構築試験も受験します！<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/paramim999/status/1447779401790156805?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1447779401790156805.jpg" alt="@paramim999" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        T.K<br><span>@paramim999<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      実業務のシナリオを想定してAWSインフラの設計や設計したものを実際に構築してスキル測定ができるらしい。<br>
+                      しかも無料。今のところ一次試験（インフラ設計）が終わった所だけどFBも納得感あるかな<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/boccham/status/1447499753596485632?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1447499753596485632.jpg" alt="@boccham" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        boccham<br><span>@boccham<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      EC2問題を行い、知識を再確認する機会になり、良かったです。実装編でフィードバックしていただいたものをしっかり実装できるようにしたいです。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/KwanMu/status/1447125716298989568?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1447125716298989568.jpg" alt="@KwanMu" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ちゃむ👨‍💻インフラエンジニア<br><span>@KwanMu<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      この実技試験は、自身の保有資格に見合う業務遂行能力があるかを測ることのできる、非常に有意義な試験でした。「自身のAWS力が、どれだけあるか」を測りたい、全てのエンジニアにお勧めの試験です。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/pinetail63/status/1447102497424769025?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1447102497424769025.jpg" alt="@pinetail63" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        snowmonster<br><span>@pinetail63<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      AWSを使った設計について復習するために受験してみました。インフラについて様々な観点で理解しているかを確認できる問題で、コメント等もいただけるので満足です。引き続きトライしていきます。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Takashi08444106/status/1446517296822849537?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1435856615811411969.jpg" alt="@Takashi08444106" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Takashi@インフラエンジニア<br><span>@Takashi08444106<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      アーキテクチャ設計試験が完了してフィードバックを頂きました。知識レベルでは一定の評価を頂けて良かったです。PMからよく依頼させる要件がまとまっている印象の試験でした。実際の環境構築試験にもチャレンジしたいと思います。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/onodak89/status/1443815402304200706?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1443815402304200706.jpg" alt="@onodak89" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        onodak<br><span>@onodak89<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      オンプレからの移行設計問題完了！<br>
+                      返ってきた評価は概ね良かった<br>
+                      実技試験自体は2回目だけど、前回よりAWS以外の知識が多少必要で難しかったな<br><br>
+                      で、その設計をもとに絶賛環境構築中だけど、四苦八苦してる。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Y0u281/status/1442492266367516678?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1390316623605633024.jpg" alt="@Y0u281" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Yuta🐁<br><span>@Y0u281<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      ECS問題受験しました。<br>
+                      EC2よりも難しく残念ながら実装できませんでした。<br>
+                      コンテナ知識はAWSだけではダメですので基本的な部分を学びなおそうと思います。<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/seamooooooo/status/1441835853542612997?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1441835853542612997.jpg" alt="@seamooooooo" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        shiiiimo<br><span>@seamooooooo<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      awsの設計問題終わり！<br>
+                      副業目的にやったけど、網羅的に考える必要があったから、普通に勉強になった<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/sasamuku/status/1436575823952158722?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1436575823952158722.jpg" alt="@sasamuku" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ささむく/SRE<br><span>@sasamuku<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      ECSの試験を受けてみました！<br>
+                      FBも詳細で勉強になりました。<br>
+                      <span>#engineed</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/ysakamoto14/status/1435856615811411969?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1435856615811411969.jpg" alt="@ysakamoto14" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        y-sakamoto<br><span>@ysakamoto14<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      engineedの実技試験をやってみた。<br>
+                      AWS有資格者しか受けれないみたいだから、資格取ったらまずはやってみると良い気がする!!<br>
+                      <span>info.engineed.io/engineer/ #engineed #AWS</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Kakimoty_Field/status/1434045108593119234?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1434045108593119234.jpg" alt="@Kakimoty_Field" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Dai Kakimo(かっきー)<br><span>@Kakimoty_Field<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      コンテナ と CI/CD のAWSアーキテクチャを考えるテストを受験しました<br><br>
+                      今まで自主学習してきたことを模擬業務の形で応用することができるのでとても楽しかったです✨<br><br>
+                      フィードバックも充実しているので<br>
+                      新しい気づきも得ることができました<br><br>
+                      <span>#engineed<br>info.engineed.io/engineer/</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/vlayusuke/status/1421602506560348162?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1421602506560348162.jpg" alt="@vlayusuke" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        ゆうすけさん<br><span>@vlayusuke<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      先日受験した、 <span>#engineed</span> さんのアーキテクチャ設計試験結果をいただいた。FBの内容がとにかく濃い! どの点に改善が必要なのかを明確に書いてくれている。改めて自分の弱点がここなんだってことに気づかせてくれた点に感謝。AWS SOA-C02対策としても有効だと思います。<br>
+                      <span>info.engineed.io/engineer/</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/mato_kata/status/1418093026866470914?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1418093026866470914.jpg" alt="@mato_kata" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Masato Kataoka<br><span>@mato_kata<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      engineedさんのAWS構築実技試験を受けてみました。<br><br>
+                      構成図作成をしてから構築を行うという実践的な内容なので、AWS環境を数回構築をしてから試験を受けると面白いと思います。<br><br>
+                      試験後のフィードバックもとても参考になりました。<br>
+                      <span>info.engineed.io/engineer/ #engineed</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Kakimoty_Field/status/1403222288837664769?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1434045108593119234.jpg" alt="@Kakimoty_Field" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Dai Kakimo(かっきー)<br><span>@Kakimoty_Field<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      engineed さんの<br>
+                      AWS 構築実技試験を受けました<br><br>
+                      要件にそった構成図をもとに<br>
+                      実際にAWSに環境を構築していくもの<br><br>
+                      名前は聞いたことあるけれど一回もさわったことないサービスが使いこなせず<br>
+                      盛り込みたい機能を実装しきれなかった😭<br><br>
+                      実際に触って勉強しないと！<br><br>
+                      <span>#engineed<br>info.engineed.io/engineer/</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/mori_ri/status/1399134770462793729?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1399134770462793729.jpg" alt="@mori_ri" class="img-fluid" loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        moriri<br><span>@mori_ri<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      受験した感想は、与えられた課題に対してどのように対処するかを考えて、自分に足りないところを見つけるいい機会になったので楽しかったです。試験後のフィードバックも想像したよりもまとまっていて参考になった<br>
+                      <span>info.engineed.io/engineer/ #engineed</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/maijun2/status/1397545138826579968?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1397545138826579968.jpg" alt="@maijun2" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        jun kubotamai@まいじゅん☆AWSをもっと頑張るマン<br><span>@maijun2<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      AWS有資格者限定の実技試験を私も体験してみました。<br><br>
+                      構成図作成から環境構築までを実践的内容で行えたのですが、トライしてみてとても楽しかったですね。試験結果も細かくフィードバックしてくれて腹落ちしまくりでした。<br><br>
+                      資格保有者の方はぜひ！<br><br>
+                      <span>info.engineed.io/engineer/ #engineed</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/FinShinjuku/status/1390949182945464326?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1390949182945464326.jpg" alt="@FinShinjuku" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        新宿の金融エンジニア@時間の確保に走る<br><span>@FinShinjuku<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      先日受験させて頂きました😄<br><br>
+                      実はわかっていなかった手順や設定を勉強する良い機会になりました😊<br><br>
+                      <span>info.engineed.io/engineer/ #engineed</span>
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://twitter.com/Y0u281/status/1390316623605633024?s=20" target="_blank" class="d-block tweet-card">
+                    <div class="user-profile">
+                      <div class="user-icon">
+                        <img src="img/user_1390316623605633024.jpg" alt="@Y0u281" class="img-fluid " loading="lazy">
+                      </div>
+                      <p class="user-name">
+                        Yuta🐁<br><span>@Y0u281<span>
+                      </p>
+                    </div>
+                    <p class="tweet-content">
+                      <span>info.engineed.io/engineer/ #engineed</span><br>
+                      受験した感想としては中々難しかったですが、楽しかったです。<br>
+                      実技試験のサンプルAMIが試験にマッチしていなかったことが少し気になったかな。
+                    </p>
+                    <div class="d-flex justify-content-around mt-2">
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi tweet-logo">
+                        <g>
+                          <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                        </g>
+                      </svg>
+                      <svg viewBox="0 0 24 24" height="20px" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue tweet-logo">
+                        <g>
+                          <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination mt-5"></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-black"></div>
+            <div class="swiper-button-next swiper-button-black"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fv-cta mx-auto mt-4 mt-md-5">
+        <p class="my-3 font-weight-bold text-center">【 AWS認定保持者限定！まずは30秒簡単ユーザー登録 】</p>
+        <div class="nav-cta mx-auto">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta">
+              <span class="emphasis btn-font">(無料) 実技試験を受ける</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="examples">
+      <div class="container mt-md-5">
+        <h2><span class="sub-title">副業・転職例のご紹介</span><br>魅力的なスカウトを<br class="d-sm-none">企業からもらう事ができます。</h2>
+        <div class="inner shadow-sm">
+          <h3 class="text-center mb-3">▼ 副業・転職のスカウト例</h3>
+          <div class="d-lg-flex">
+            <div class="scout-card border p-0 mb-3 mx-auto position-relative">
+              <div class="table-head">
+                <h4 class="text-white table-lead text-center">実力に合わせて様々な<br>ポジションを募集中</h4>
+              </div>
+              <div>
+                <p class="text-center my-3 significant font-weight-bold">＼内製エンジニア強化中／</p>
+                <ul class="px-4">
+                  <li>某IT企業</li>
+                  <li>年収：500～1200万円</li>
+                  <li>ポジション：AWSも活用できるSRE担当メンバー</li>
+                  <li>働き方：リモートor出社</li>
+                </ul>
+              </div>
+              <div class="client-charm">
+                <h5 class="text center center-heading my-4">スカウト企業の特徴</h5>
+                <ul class="">
+                  <li>クラウド型診断ツール提供会社</li>
+                  <li>エンジニアの内製化を強化中</li>
+                  <li>エンジニア採用特設ページあり</li>
+                </ul>
+              </div>
+            </div>
+            <div class="scout-card border p-0 mb-3 mx-auto position-relative">
+              <div class="table-head">
+                <h4 class="text-white table-lead text-center">副業で短時間・<br>
+                  高単価のスカウトを</h4>
+              </div>
+              <div>
+                <p class="text-center my-3 significant font-weight-bold">＼短時間・高報酬も／</p>
+                <ul class="px-4">
+                  <li>某ベンチャーIT企業</li>
+                  <li>時給：7,000円</li>
+                  <li>時間：週4H～</li>
+                  <li>働き方：完全リモート</li>
+                </ul>
+              </div>
+              <div class="client-charm">
+                <h5 class="text-center center-heading my-4">スカウト企業の特徴</h5>
+                <ul class="">
+                  <li class="significant">エンジニア人材サービス提供会社</li>
+                  <li>スタートアップ企業</li>
+                  <li>代表からの直接の連絡</li>
+                </ul>
+              </div>
+            </div>
+            <div class="scout-card border p-0 mb-3 mx-auto position-relative">
+              <div class="table-head">
+                <h4 class="text-white table-lead text-center">副業で<br>
+                  経験の幅が広がる</h4>
+              </div>
+              <div>
+                <p class="text-center my-3 significant font-weight-bold">＼未経験分野へのチャレンジOK／</p>
+                <ul class="px-4">
+                  <li>某ベンチャーIT企業</li>
+                  <li>時給：3,500円</li>
+                  <li>時間：週8H～</li>
+                  <li>働き方：完全リモート</li>
+                </ul>
+              </div>
+              <div class="client-charm">
+                <h5 class="text center center-heading my-4">スカウト企業の特徴</h5>
+                <ul class="">
+                  <li>スタートアップ企業</li>
+                  <li>代表からの直接の連絡</li>
+                  <li class="significant">ポテンシャル重視</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="purposes my-4 text-justify">
+              <li>
+                未経験から実技試験の結果で<br class="d-sm-none">企業にスキルをPRして転職を成功
+              </li>
+              <li>
+                経験の幅を広げる副業を獲得
+              </li>
+              <li>
+                AWSエンジニアの仲間が欲しい
+              </li>
+            </ul>
+            <p class="text-success font-weight-bold text-center">
+              他種多様な目的で、最前線で活躍する<br class="d-sm-none">エンジニアから、<br class="d-none d-sm-block">
+              これからスキル向上を目指す<br class="d-sm-none">エンジニアまで多数の登録を頂いてます！
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="fv-cta mx-auto mt-4 mt-md-5">
+        <p class="font-weight-bold my-3 text-center">
+          【 AWS認定保持者限定！まずは30秒簡単ユーザー登録 】
+        </p>
+        <div class="nav-cta mx-auto">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta">
+              <span class="emphasis btn-font">簡単ユーザー登録</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="usersVoices">
+      <div class="container mx-auto">
+        <h2>利用者の声</h2>
+        <div class="d-xl-flex justify-content-between align-items-end mb-5">
+          <div class="voice-item d-flex align-items-center justify-content-center flex-column mb-5 mb-xl-0">
+            <div class="balloon mb-4">
+              <p class="pt-3 pb-2 text-center">
+                希望するポジションへの<span class="significant">キャリアチェンジが叶いました！</span><br class="d-none d-sm-block">engineedは<span class="significant">実務経験以外の技術力をアピール</span>できるサービス<br class="d-none d-sm-block">なので<span class="significant">前職より高い報酬でオファーをいただけました</span>
+              </p>
+              <div class="w-100 mx-auto px-sm-3 pb-2 pb-sm-3 d-flex justify-content-end">
+                <a class="modal-toggle-button" data-toggle="modal" data-target="#usersVoiceDetail1">
+                  続きを読む
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="d-flex flex-column align-items-center mr-3">
+                <img src="img/icon-user01.svg" alt="利用者の声" class="img-fluid mb-2" loading="lazy">
+                <p class="">Y様・20代後半</p>
+              </div>
+              <div class="d-flex flex-column justify-content-center">
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <img class="mr-2" src="img/check_complete_done_mark_ready_success_2701079.svg" alt="チェックボックス" width="20px" height="20px">
+                  <p class="exam-status">
+                    engineed 実技試験 受験済
+                  </p>
+                </div>
+                <div class="user-status bg-orange">
+                  <p class="text-center">【ご転職先 決定】</p>
+                  <p class="text-center">スタートアップご出身<span class="d-none d-md-inline">&nbsp;/&nbsp;</span><br class="d-md-none">バックエンドエンジニア</p>
+                </div>
+              </div>
+            </div>
+            <!-- modal dialog -->
+            <div class="voice-content modal fade" id="usersVoiceDetail1" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+              <div class="modal-dialog small-container" role="document">
+                <div class="modal-content">
+                  <div class="modal-header d-sm-none border-0">
+                    <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pt-sm-5">
+                    <div class="d-sm-flex align-items-center justify-content-center">
+                      <div class="text-center mb-3 mb-sm-0 mr-sm-4">
+                        <img src="img/icon-user01.svg" alt="利用者の声" class="img-fluid">
+                        <p>Y様・20代</p>
+                      </div>
+                      <div class="taken-exam bg-orange">
+                        <p class="mb-1">受験済 試験種別</p>
+                        <p>
+                          <span class="font-weight-bold">・EC Site Migration Based on Amazon EC2 (Basic) </span><span class="d-lg-none"><br>&emsp;</span>&nbsp;-&nbsp;アーキテクチャ設計, 環境構築
+                        </p>
+                      </div>
+                    </div>
+                    <div class="interview-text text-justify px-sm-4 py-4 py-sm-5">
+                      <p class="font-weight-bold mb-2">
+                        他の転職 / 副業サービスと比較して engineed はいかがでしたか？
+                      </p>
+                      <p class="mb-4">
+                        engineed の登録には、AWS認定が必須であり且つ実技試験を受けることでスキルチェックができます。試験の結果（自己スキル）と転職活動が直結したサービスだったので、擦り合わせが難しかったスキルマッチの部分も企業とスムーズにコミュニケーションが取れました。また、engineed のキャリアアドバイザーの方には転職先の決定から入社日まで親身にサポートしていただきました。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        engineed のフィードバックシート（試験結果）は、ご自身の転職活動などに活用できましたか？
+                      </p>
+                      <p class="mb-4">
+                        engineed の実技試験の結果が記載されているフィードバックシートで自分の技術レベルがある程度把握できるため、経歴だけではなく自分の技術力に自信を持って転職活動に臨めました。企業の選考では、面接担当者がフィードバックシートを参考にされたと仰られていたので、engineed の技術試験やフィードバックシートは転職活動に有効であったと感じています。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        engineed で受け取ったスカウト、engineed で出会った企業との面談 / 面接で感じたことをお聞かせください
+                      </p>
+                      <p class="mb-4">
+                        engineed を利用している企業は、フィードバックシート（実技試験の結果）に目を通されているせいか、engineed では納得感のあるスカウトを受け取ることができました。実際にお話を聞いた中でスカウトで受けとった情報などとも過不足がなかったので働くイメージがしやすかったです。また選考に進んだ企業は、会社や開発組織、業務内容や入社後のキャリアパスなどの説明がしっかりしており採用に対する熱量も高い印象を受けました。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        最後に engineed に登録していないユーザーに向けてメッセージをお願いします
+                      </p>
+                      <p>
+                        engineed のサービスは、企業とのスキル面でのコミュニケーションを大きく省くことができ効率的に転職活動を行うことができます。スキルチェックだけでも自身の技術レベルを把握できる手段としても有用なので、AWS認定を持っている方、将来AWSエンジニアとしてのキャリアにご興味があれば一度サービスを利用されることをお勧めします。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="nav-cta mx-auto">
+                      <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+                        <div class="cta registration-cta">
+                          <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal dialog -->
+          </div>
+          <div class="voice-item d-flex align-items-center justify-content-center flex-column">
+            <div class="balloon mb-4">
+              <p class="pt-3 pb-2 text-center">
+                  <span class="significant">平日の夜や土日はフルリモート</span>でスタートアップ企業の<br>プロジェクトに<span class="significant">副業で参画、コンテナ技術を活用した<br>インフラアーキテクチャの設計・構築に</span>携わっています
+              </p>
+              <div class="w-100 mx-auto px-sm-3 pb-2 pb-sm-3 d-flex justify-content-end">
+                <a class="modal-toggle-button" data-toggle="modal" data-target="#usersVoiceDetail2">
+                  続きを読む
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="d-flex flex-column align-items-center mr-3">
+                <img src="img/icon-user02.svg" alt="利用者の声" class="img-fluid mb-2" loading="lazy">
+                <p class="">S様・30代前半</p>
+              </div>
+              <div class="d-flex flex-column justify-content-center">
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <img class="mr-2" src="img/check_complete_done_mark_ready_success_2701079.svg" alt="チェックボックス" width="20px" height="20px">
+                  <p class="exam-status">
+                    engineed 実技試験 受験済
+                  </p>
+                </div>
+                <div class="user-status bg-orange">
+                  <p class="text-center">【副業案件 獲得】</p>
+                  <p class="text-center">大手SIerご在籍<span class="d-none d-md-inline">&nbsp;/&nbsp;</span><br class="d-md-none">インフラエンジニア</p>
+                </div>
+              </div>
+            </div>
+            <!-- modal dialog -->
+            <div class="voice-content modal fade" id="usersVoiceDetail2" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+              <div class="modal-dialog small-container" role="document">
+                <div class="modal-content">
+                  <div class="modal-header d-sm-none border-0">
+                    <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pt-sm-5">
+                    <div class="d-sm-flex align-items-center justify-content-center">
+                      <div class="text-center mb-3 mb-sm-0 mr-sm-4">
+                        <img src="img/icon-user02.svg" alt="利用者の声" class="img-fluid">
+                        <p>S様・30代</p>
+                      </div>
+                      <div class="taken-exam bg-orange">
+                        <p class="mb-1">受験済 試験種別</p>
+                        <p>
+                          <span class="font-weight-bold">・EC Site Migration Based on Amazon EC2 (Basic) </span><span class="d-lg-none"><br>&emsp;</span>&nbsp;-&nbsp;アーキテクチャ設計, 環境構築
+                        </p>
+                        <p>
+                          <span class="font-weight-bold">・Event Site Launch Based on Amazon ECS (Basic)</span><span class="d-lg-none"><br>&emsp;</span>&nbsp;-&nbsp;アーキテクチャ設計, 環境構築
+                        </p>
+                      </div>
+                    </div>
+                    <div class="interview-text text-justify px-sm-4 py-4 py-sm-5">
+                      <p class="font-weight-bold mb-2">
+                        今回 engineed に登録されたきっかけをお聞かせください
+                      </p>
+                      <p class="mb-4">
+                        WEBで広告を見かけたのがきっかけで engineed を知りました。AWS 認定資格を取得するためにこれまで学習してきたことや、自分の実力を試す良い機会だと思い登録しました。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        他の転職 / 副業サービスと比較して engineed はいかがでしたか？
+                      </p>
+                      <p class="mb-4">
+                        「実技試験がある転職サービス」という点が、従来のサービスと異なる点であり新鮮さを感じました。engineed の試験では、自分の実力を測ることができます。要件に従って設計をしたり、実際にAWS上にアーキテクチャを構築する中で、いままで曖昧に理解していた部分が可視化され、スキルを計測するだけではなく、AWSの実力向上にも非常に役に立ちました。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        engineed のフィードバックシート（試験結果）は、ご自身の求職活動などに活用できましたか？
+                      </p>
+                      <p class="mb-4">
+                        自分のAWSに纏わる実力を測るという点では、フィードバックシートは有効でした。engineed の事務局の方から詳細なフィードバックがレポート式でいただけるので、様々な気づきを得ることができました。また、試験問題の要件に対する解答の内容は、AWSのベストプラクティス、ドキュメントに基づいて提示されており、非常に参考になりました。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        engineed で受け取ったスカウト、engineed で出会った企業との面談 / 面接で感じたことをお聞かせください
+                      </p>
+                      <p class="mb-4">
+                        自分の経歴をしっかり見ていただいた上でスカウトをしてくれたと感じました。AWSエンジニアに特化したサービスということもあり、自分のやりたいことと、企業が求めているもののギャップが少なく、スムーズに面談が進んだと感じています。
+                      </p>
+                      <p class="font-weight-bold mb-2">
+                        最後に engineed に登録していないユーザーに向けてメッセージをお願いします
+                      </p>
+                      <p>
+                        AWSの副業をしたい、AWSを自己学習していてどこまで実力がついたか知りたいという方は、是非 engineed に登録して engineed から提供されている AWS の試験を受験されることをお勧めします。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="nav-cta mx-auto">
+                      <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+                        <div class="cta registration-cta">
+                          <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal dialog -->
+          </div>
+        </div>
+        <div class="voice-item d-flex align-items-center justify-content-center flex-column mx-auto">
+          <div class="balloon mb-4">
+            <p class="pt-3 pb-2 text-center">
+                他の副業サービスでは、AWSの経験年数だけで実力を判断されることも少なくないですが、engineedでは<span class="significant">実技試験の結果を企業の方に見てもらえる</span>ので、経験が浅くても<span class="significant">AWSの副業案件を獲得できる機会がある</span>と感じました。
+            </p>
+            <div class="w-100 mx-auto px-sm-3 pb-2 pb-sm-3 d-flex justify-content-end">
+              <a class="modal-toggle-button" data-toggle="modal" data-target="#usersVoiceDetail3">
+                続きを読む
+              </a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="d-flex flex-column align-items-center mr-3">
+              <!-- svgをもらう -->
+              <img src="img/icon-user03.png" alt="利用者の声" class="img-fluid mb-2" loading="lazy">
+              <p class="">A様・30代前半</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center">
+              <div class="d-flex align-items-center justify-content-center mb-2">
+                <img class="mr-2" src="img/check_complete_done_mark_ready_success_2701079.svg" alt="チェックボックス" width="20px" height="20px">
+                <p class="exam-status">
+                  engineed 実技試験 受験済
+                </p>
+              </div>
+              <div class="user-status bg-orange">
+                <p class="text-center">【副業案件 獲得】</p>
+                <p class="text-center">大手SIerご在籍<span class="d-none d-md-inline">&nbsp;/&nbsp;</span><br class="d-md-none">アプリケーションエンジニア</p>
+              </div>
+            </div>
+          </div>
+          <!-- modal dialog -->
+          <div class="voice-content modal fade" id="usersVoiceDetail3" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+            <div class="modal-dialog small-container" role="document">
+              <div class="modal-content">
+                <div class="modal-header d-sm-none border-0">
+                  <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body pt-sm-5">
+                  <div class="d-sm-flex align-items-center justify-content-center">
+                    <div class="text-center mb-3 mb-sm-0 mr-sm-4">
+                      <img src="img/icon-user03.png" alt="利用者の声" class="img-fluid">
+                      <p>A様・30代</p>
+                    </div>
+                    <div class="taken-exam bg-orange">
+                      <p class="mb-1">受験済 試験種別</p>
+                      <p>
+                        <span class="font-weight-bold">・EC Site Migration Based on Amazon EC2 (Basic) </span><span class="d-lg-none"><br>&emsp;</span>&nbsp;-&nbsp;アーキテクチャ設計, 環境構築
+                      </p>
+                    </div>
+                  </div>
+                  <div class="interview-text text-justify px-sm-4 py-4 py-sm-5">
+                    <p class="font-weight-bold mb-2">
+                      今回 engineed に登録されたきっかけをお聞かせください
+                    </p>
+                    <p class="mb-4">
+                      Webエンジニアとしてフロントエンド、バックエンドの開発だけではなく、インフラも含めたフルスタックでのスキルアップを図りたいと考えていました。そのため、AWSエンジニアとしての副業案件を探していましたが、AWS資格保持者限定というAWS関連の案件に限定したサービスに惹かれて登録しました。
+                    </p>
+                    <p class="font-weight-bold mb-2">
+                      他の転職 / 副業サービスと比較して engineed はいかがでしたか？
+                    </p>
+                    <p class="mb-4">
+                      実際に環境構築まで行なえる実技試験が斬新でした。他サービスでは経験年数だけで実力を判断されることも少なくないですが、企業の方に engineed の実技試験の結果を見ていただけるのでAWSの経験が浅い場合でもAWS関連の副業案件を獲得できる機会があると感じました。
+                    </p>
+                    <p class="font-weight-bold mb-2">
+                      engineed のフィードバックシート（試験結果）は、ご自身の求職活動などに活用できましたか？
+                    </p>
+                    <p class="mb-4">
+                      資格情報や経歴だけではなく、試験結果を評価いただき案件を獲得できました。また、構築した環境の優れている点も詳細にフィードバックいただけるので、エンジニアとして自信に繋がりました。学習のモチベーション向上、副業探しの両面で engineed は有効はサービスだと思います。
+                    </p>
+                    <p class="font-weight-bold mb-2">
+                      engineed で受け取ったスカウト、engineed で出会った企業との面談 / 面接で感じたことをお聞かせください
+                    </p>
+                    <p class="mb-4">
+                      私自身、AWSの経験自体は浅いながら複数のオファーをいただき、AWSエンジニアに対する需要の高さを実感しました。技術試験の結果から判断できるスキルレベルや engineed のマイページ（プロフィール）に記載した志向をもとにオファーを頂けるので、エンジニア・企業双方にとってミスマッチは少ないと思います。
+                    </p>
+                    <p class="font-weight-bold mb-2">
+                      最後に engineed に登録していないユーザーに向けてメッセージをお願いします
+                    </p>
+                    <p>
+                      実技試験を受験するだけでも、実際に手を動かしてAWS環境を構築することは私にとって貴重な経験でした。また、保持している資格や実技試験の結果をもとに複数のオファーを頂くこともできました。AWSに関わる副業・転職先をお探しの方にとっては、非常におすすめできるサービスです。
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="nav-cta mx-auto">
+                    <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+                      <div class="cta registration-cta">
+                        <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal dialog -->
+        </div>
+      </div>
+    </section>
+
+    <section id="certification">
+      <div class="container mt-md-5">
+        <h2>AWSパートナーネットワークの活用</h2>
+        <div class="inner shadow-sm">
+          <div>
+            <p class="font-weight-bold text-success text-center certification-sentence">
+              engineedを運営する株式会社アンチパターンは、<br class="d-none d-md-block">利用者の皆様に安心してengineedのサービスを利用していただけるよう、<br class="d-none d-md-block">AWSパートナーネットワーク(APN)を活用しています。
+            </p>
+          </div>
+          <div class="row mt-4 align-items-center">
+            <div class="col-lg-3 col-8 mx-auto my-3">
+              <img src="img/aws-select-tier-services.png" alt="" class="img-fluid" loading="lazy">
+            </div>
+            <div class="col-lg-9">
+              <h3>◆ AWS サービスパートナーティア</h3>
+              <p class="text-justify">AWS サービスパートナーティアとはアマゾン ウェブ サービスが提供する、AWSパートナープログラムにおいてパートナーとして認定された企業のことを指します。中でもセレクトティアサービスパートナーは、あらゆる業種・規模のお客様に対し、AWS を活用したインフラストラクチャとアプリケーションの設計、開発、構築、移行、管理をサポートするプロフェッショナルサービス企業に与えられます。株式会社アンチパターンは2021年7月にAWS セレクトティアサービスパートナーに認定されました。</p>
+            </div>
+          </div>
+          <div class="row mt-4 align-items-center">
+            <div class="col-lg-3 col-8 mx-auto my-3">
+              <img src="img/aws-qualified-software.png" alt="" class="img-fluid" loading="lazy">
+            </div>
+            <div class="col-lg-9">
+              <h3>◆ AWS 認定ソフトウェア</h3>
+              <p class="text-justify">AWS 認定ソフトウェアは、AWS上でSaaSやパッケージ等を稼働させているAWSパートナーのソリューション提供を促進するための厳選されたソフトウェアです。AWSによる技術審査を通じて、AWSファンデーショナルテクニカルレビュー（FTR）を完了することで認定を受けることができます。engineedは2021年10月に FTR を通過し、「AWS 認定ソフトウェア (AWS Qualified Software)」に認定されました。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="container mt-md-5">
+        <h2><span class="sub-title">engineedの理念</span><br>AWSエンジニアへ<br class="d-sm-none">実力に見合った報酬</h2>
+        <div class="inner shadow-sm">
+          <h3 class="text-center mb-4 mb-md-5">「日本のエンジニアを憧れの職業へ」</h3>
+          <div class="mission-item mb-4">
+            <h4 class="font-weight-bold">AWSエンジニア市場価値・需要は拡大中</h4>
+            <p class="text-justify">
+              <span class="yellow-text">
+                AWSは市場でのシェア率が伸びた事で、様々な業界で活用が進んでいるため、 AWSエンジニアの需要はとても高いです。
+              </span>
+              <br>
+              様々な企業から「採用したい」「副業でお願いしたい」という声も多く、ニーズが高い職種です。
+            </p>
+          </div>
+          <div class="mission-item mb-4">
+            <h4 class="font-weight-bold">AWSエンジニアの需要と報酬のバランスの現状</h4>
+            <p class="text-justify">
+              一方で、まだ新しい分野という事もあり、
+              <span class="yellow-text">
+                AWSエンジニアは実力を証明することが難しく、資格/経歴情報はあるものの、安価で実務に入り能力の証明するなど、
+              </span>
+              時には実力に見合わない報酬/仕事を行なっているのが現況です。
+            </p>
+          </div>
+          <div class="mission-item">
+            <h4 class="font-weight-bold">実技試験を元に実力に見合った報酬を</h4>
+            <p class="text-justify">
+              engineedは、実務に近しい試験問題に回答することで自らの実力を試すことができ、またその結果をもとにクライアントとのスキルのすり合わせができる仕組みを提供することで、
+              <span class="yellow-text">
+                実力に見合ったスカウトを獲得できます。
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <div class="container mt-md-5">
+        <h2><span class="sub-title">ご利用の流れ</span><br>engineedご利用のながれ</h2>
+        <div class="inner shadow-sm text-justify">
+          <div class="step-item bg-light">
+            <h3><span class="step-number">STEP 1</span>ユーザー登録</h3>
+            <p>名前とメールアドレス、パスワードの入力のみでご登録いただけます。ユーザー登録は無料です。</p>
+          </div>
+          <div class="step-item bg-light">
+            <h3><span class="step-number">STEP 2</span>プロフィール &amp; ご希望の条件の入力</h3>
+            <p>プロフィールやAWS認定の証明リンク・ご希望の働き方などを入力頂きます。</p>
+          </div>
+          <div class="step-item bg-light">
+            <h3><span class="step-number">STEP 3</span>実技試験テスト</h3>
+            <p>実技に近いengineed独自の実技試験です。あなたのスキルを可視化して企業にアピールします。</p>
+          </div>
+          <div class="step-item bg-light">
+            <h3><span class="step-number">STEP 4</span>スカウトとマッチング</h3>
+            <p>企業からのスカウトを受けて、オファーを承諾すればマッチング完了です。</p>
+          </div>
+          <div class="step-item bg-light mb-0">
+            <h3><span class="step-number">STEP 5</span>お仕事スタート</h3>
+            <p>実際に企業と契約を結んで、お仕事がスタートします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="fv-cta mx-auto mt-4">
+        <p class="mb-3 font-weight-bold text-center">【 AWS認定保持者限定！まずは30秒簡単ユーザー登録 】</p>
+        <div class="nav-cta mx-auto">
+          <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+            <div class="cta registration-cta">
+              <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container mt-md-5">
+        <h2>engineedを利用中の企業</h2>
+        <div class="inner shadow-sm p-sm-5 p-4">
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/anotherworks.png" alt="株式会社Another works" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/atjc.jpg" alt="株式会社ATJC" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/base.jpg" alt="ベース株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/carpeDiem.jpg" alt="Carpe diem株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/classmethod.png" alt="クラスメソッド株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/Coincheck_logo_rgb_t.png" alt="コインチェック株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/conoc.jpg" alt="株式会社CONOC" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/dip_logo.png" alt="ディップ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/dss.png" alt="株式会社ディーエスエス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/evand.jpg" alt="Evand株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/fenrir.jpg" alt="フェンリル株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/fez.jpg" alt="株式会社フェズ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/galapagos.png" alt="株式会社ガラパゴス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/GMO_RESEARCH_logo.jpg" alt="GMOリサーチ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/gunosy_inc_logo.jpg" alt="株式会社Gunosy" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/ingage.png" alt="株式会社インゲージ
+                " class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/iyell.jpg" alt="iYell株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/lancers.png" alt="ランサーズ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/logo_leon.png" alt="株式会社レオンテクノロジー" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/lifematics.jpg" alt="ライフマティックス株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/linkAndMotivationGroup.jpg" alt="株式会社リンクアンドモチベーション" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/mercury_img.png" alt="株式会社マーキュリーリアルテックイノベーター" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/nttdata.png" alt="株式会社エヌ・ティ・ティ・データ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/payme.jpg" alt="株式会社ペイミー" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/potentialight.jpg" alt="株式会社ポテンシャライト" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/retrieva.jpg" alt="株式会社レトリバ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/RevCommLogo.png" alt="株式会社RevComm" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/s&ts.jpg" alt="誠信システムズ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/scubism.png" alt="株式会社エスキュービズム" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/seraku.png" alt="株式会社セラク" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/serverworks.jpg" alt="株式会社サーバーワークス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/simpline.jpg" alt="株式会社シンプライン" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/sophiatech.png" alt="株式会社ソフィアテック" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/startiasoft.png" alt="西安スターティアソフト株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/stransa.jpg" alt="株式会社ストランザ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/tcdigital_logo.png" alt="株式会社テクノデジタル" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/Trainocate_logo.png" alt="トレノケート株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/tribeat.png" alt="株式会社トライビート" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-success font-weight-bold mt-3 mt-md-4">他にも多くの企業が<br class="d-sm-none">engineedを利用しています。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="container mt-md-5">
+        <h2>よくある質問</h2>
+        <div class="inner shadow-sm text-justify p-sm-5 p-4">
+          <h3 class="mt-2 mb-3">Q. 実技試験を受けるには、実務経験など、どのような条件がありますか？</h3>
+          <p class="mb-5">
+            A. AWS認定資格を保有している事のみが条件となります。AWS認定の証明リンクのみご準備いただければ大丈夫です。
+          </p>
+          <h3 class="mb-3">Q. ユーザ登録してみたいけど、うまく使いこなせるか心配です。</h3>
+          <p class="mb-5">
+            A. ユーザ登録後に、engineedの使い方を運営スタッフにチャットやオンライン面談による活用サポートでご相談頂くことが可能です。
+          </p>
+          <h3 class="mb-3">Q. ユーザ登録に料金はかかりますか？</h3>
+          <p class="mb-5">
+            A. 無料で全てのサービスをご利用頂けます。
+          </p>
+          <h3 class="mb-3">Q. 実技試験を受けるには、お金がかかりますか？</h3>
+          <p class="mb-5">
+            A. 無料で全てのサービスをご利用頂けます。
+          </p>
+          <h3 class="mb-3">Q. どんな企業からのスカウトが来ますか？</h3>
+          <p class="mb-5">
+            A. 大手企業からスタートアップまで幅広い企業様からのスカウトの機会がございます。AWS人材を採用したい多くの企業様にご好評いただいております。一部の企業様に関しては、こちらのページの中でもロゴを公開しておりますのでご確認ください。<br>※活用企業様は順次増加中です。
+          </p>
+          <h3 class="mb-3">Q. どのような仕事のスカウトがありますか？</h3>
+          <p class="mb-5">
+            A. 正社員、副業、フリーランスあらゆる形態で企業とのマッチングが可能です。
+            登録ユーザー様の実力や希望条件に合った企業より、AWSに特化した仕事のスカウトのご連絡を致します。            
+          </p>
+          <h3 class="mb-3">Q. 副業の場合の報酬の受け取りはどのようになりますか？</h3>
+          <p>
+            A. スカウトがあった企業との直接契約となります。そのため、報酬は企業との取り決めた方法により支払われます。
+          </p>
+        </div>
+      </div>
+      <div class="nav-cta mx-auto mt-4 mt-md-5">
+        <a href="https://engineed.io/auth/register" class="w-100 h-100 sign-up-cta">
+          <div class="cta registration-cta">
+            <span class="emphasis btn-font">(無料) 新規ユーザー登録</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="company">
+      <div class="container">
+        <h3>運営会社</h3>
+        <div class="logo">
+          <a href="https://anti-pattern.co.jp">
+            <img src="img/ap_logo.png" alt="株式会社アンチパターンのロゴ" width="100%" class="logo-image" loading="lazy">
+          </a>
+        </div>
+        <p class="name">株式会社アンチパターン</p>
+        <p class="text">株式会社アンチパターンは、「日本のソフトウェアエンジニアを憧れの職業へ」を理念に2019年7月に創業したスタートアップです。</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer font-small bg-secondary px-5 pt-5 pb-4">
+    <div class="container text-center text-sm-left">
+      <div class="row align-items-center">
+        <div class="col-sm-6 mt-sm-0 mt-3">
+          <img src="img/engineedLogoWhite.png" alt="engineedのロゴ" width="200px" class="mb-3" loading="lazy"><br>
+          <a href="https://anti-pattern.co.jp" target="_blank" class="mb-1">株式会社アンチパターン</a>
+          <p>〒107-0062 東京都港区南青山3丁目15−9 <br class="d-none">MINOWA表参道3階</p>
+        </div>
+        <hr class="clearfix w-100 d-sm-none pb-3">
+        <div class="col-sm-3 mb-sm-0 mb-3">
+          <!-- <h5 class="text-uppercase">お役立ち情報</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul> -->
+        </div>
+        <div class="col-sm-3 mb-sm-0 mb-4 pl-sm-0">
+          <h5 class="text-uppercase">利用規約</h5>
+          <ul class="list-unstyled small">
+            <li>
+              <a href="https://info.engineed.io/terms/engineer/">ユーザー利用規約</a>
+            </li>
+            <li>
+              <a href="https://info.engineed.io/terms/company/">法人利用規約</a>
+            </li>
+            <li>
+              <a href="https://info.engineed.io/legal/" target="_blank">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2022
+      <a href="https://anti-pattern.co.jp">Anti-Pattern Inc.</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

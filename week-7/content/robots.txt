@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>engineed（エンジニード）| AWSエンジニア採用サービス</title>
+  <meta content="engineed（エンジニード）は、AWSエンジニア特化型のスカウトサービスです。AWS認定を有しているAWSエンジニアを副業や正社員など様々な契約形態で採用することができます。" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="https://info.engineed.io" />
+  <meta name="twitter:image" content="https://info.engineed.io/img/engineed_ogp.jpg" />
+  <meta property="fb:app_id" content="353575456678623" />
+  <meta property="og:url" content="https://info.engineed.io" />
+  <meta property="og:title" content="engineed | AWSエンジニア採用サービス" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="engineedは、AWSエンジニア特化型のスカウトサービスです。AWS認定を有しているAWSエンジニアを副業や正社員など様々な契約形態で採用することができます。" />
+  <meta property="og:image" content="https://info.engineed.io/img/engineed_ogp.jpg" />
+  <link rel="shortcut icon" href="img/engineedFavicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TPVQW28');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPVQW28"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
+      <a class="navbar-brand" href="">
+        <img src="img/engineedLogoWhite.png" alt="engineed" height="36px" class="logo-image" id="engineedLogo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+        <span class="navbar-toggler-icon" onclick="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <div>
+          <p class="small my-3 mr-4 text-white">
+            <span class="recruiter">エンジニアの方は</span><a href="https://info.engineed.io/engineer/" target="_blank"><span class="text-orange">こちら</span></a>
+          </p>
+        </div>
+        <div class="nav-cta mx-1" onclick="setDefaultContactType('documentRequest')" data-toggle="modal" data-target="#inquiryFormModal">
+          <div class="cta bg-orange inquiry-cta" id="">
+            <a class="disabled" href="" id="nav-cta-button">
+              <span class="emphasis">資料をダウンロード</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="mainVisual" class="text-white">
+      <div class="container small-container py-3">
+        <p class="fv-subtitle text-center mb-2">
+          \ 転職・副業・フリーランスも /
+        </p>
+        <h1 class="pl-lg-5 mb-0 text-center">
+          実力が保証されている<span class="text-orange"><br class="d-sm-none">スカウトサービス</span><br>
+          <span class="text-orange">AWSエンジニア</span>を採用するなら<br class="d-sm-none">engineed
+        </h1>
+        <div class="row text-center my-4">
+          <div class="col-md-4">
+            <div class="p-3 px-lg-5">
+              <img src="img/fvIcon01.svg" alt="AWSの経験が少ない方もチャレンジOK" loading="lazy" width="145px" height="118px">
+              <p class="mt-3 font-weight-bold">
+                AWS認定保持者<br>
+                限定登録
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 px-lg-5">
+              <img src="img/fvIcon02.svg" alt="実務に近い実技試験であなたのスキルを可視化" loading="lazy" width="82px" height="124px">
+              <p class="mt-3 font-weight-bold">
+                実践的な<br>
+                スキルを可視化
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 px-lg-5">
+              <img src="img/fvIcon03.svg" alt="副業で新しい領域にスキルの幅を広げる" loading="lazy" width="auto" height="135px">
+              <p class="mt-3 font-weight-bold">
+                柔軟性ある多様な<br>
+                契約形態
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100">
+          <p class="text-center mb-2">engineed が5分でわかる!</p>
+          <div class="" onclick="setDefaultContactType('documentRequest')" data-toggle="modal" data-target="#inquiryFormModal">
+            <div class="d-flex align-items-center justify-content-center cta bg-orange mx-auto inquiry-cta" id="">
+              <a class="disabled text-center" href="" id="nav-cta-button">
+                <div class="d-flex align-items-center">
+                  <img src="img/iconDocumentWhite.svg" alt="" class="mr-2">
+                  <span class="emphasis text-white">(無料) 資料ダウンロード</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2 class="mb-4">
+          FEATURES<br>
+          <span class="section-subtitle">engineedが選ばれる理由</span>
+        </h2>
+        <h3 class="text-center text-orange mb-4 mb-md-5">
+          AWSエンジニアの採用活動で<br class="d-md-none">こんなお悩みはありませんか?
+        </h3>
+        <div class="small-container">
+          <div class="row mb-4 mb-md-5 text-white">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="problem-item bg-orange text-center py-4 py-md-5">
+                <img src="img/iconSearch.svg" alt="" class="w-50 mb-3">
+                <p class="font-weight-bold mb-2 problem-index">お悩み 01</p>
+                <p>
+                  自社が望むスキルレベルの<br>AWSエンジニアに出会えない
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="problem-item bg-orange text-center py-4 py-md-5">
+                <img src="img/iconTasks.svg" alt="" class="w-50 mb-3">
+                <p class="font-weight-bold mb-2 problem-index">お悩み 02</p>
+                <p>
+                  経歴・資格情報からは<br>実力レベルが分からない
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="problem-item bg-orange text-center py-4 py-md-5">
+                <img src="img/iconExam.svg" alt="" class="w-50 mb-3">
+                <p class="font-weight-bold mb-2 problem-index">お悩み 03</p>
+                <p>
+                  選考プロセスへの実技試験の<br>導入が遅れている
+                </p>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-center mb-4 mb-md-5">
+            その採用のお悩み<br class="d-md-none"><img src="img/engineedLogoNav.png" alt=""  class="logo-inline">が<br class="d-sm-none">解決します！
+          </h3>
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <div>
+                <p class="text-center mb-0 mb-md-2">
+                  オンラインで気軽に相談する！
+                </p>
+                <div class="" onclick="setDefaultContactType('onlineMeeting')" data-toggle="modal" data-target="#inquiryFormModal">
+                  <div class="d-flex align-items-center justify-content-center cta mx-auto w-100 bg-green-light inquiry-cta" id="">
+                    <a class="disabled text-center" href="" id="nav-cta-button">
+                      <div class="d-flex align-items-center">
+                        <img src="img/iconMessageWhite.svg" alt="" class="mr-2">
+                        <span class="emphasis">無料で相談してみる</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <p class="text-center mb-0 mb-md-2">
+                  engineedが5分でわかる！
+                </p>
+                <div class="" onclick="setDefaultContactType('documentRequest')" data-toggle="modal" data-target="#inquiryFormModal">
+                  <div class="d-flex align-items-center justify-content-center cta bg-orange mx-auto w-100 inquiry-cta" id="">
+                    <a class="disabled text-center" href="" id="nav-cta-button">
+                      <div class="d-flex align-items-center">
+                        <img src="img/iconDocumentWhite.svg" alt="" class="mr-2">
+                        <span class="emphasis text-white">資料ダウンロード (無料)</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="container">
+        <h2>
+          SERVICE<br>
+          <span class="section-subtitle">サービス概要</span>
+        </h2>
+        <div class="small-container">
+          <div class="row align-items-center mb-5">
+            <div class="col-md-5">
+              <img src="img/serviceImg01.png" alt="" class="w-100">
+            </div>
+            <div class="col-md-7">
+              <h3 class="mb-2">
+                AWS認定を有するエンジニアのみを集客<br>
+                実力のあるAWSエンジニアに出会える！
+              </h3>
+              <p class="text-justify">
+                engineedでは、AWS認定保持者のみをターゲットとしてマーケティング施策を実施。ユーザーが保持するAWS認定のデジタルバッチの有効性を確認後に登録許可を行っています
+              </p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-center">
+              engineed が独自で開発した<br class="d-sm-none"><span class="text-orange"> AWS 実技試験</span>が採用のお悩みを解決
+            </h4>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-5 order-md-3">
+              <img src="img/serviceImg02.jpg" alt="" class="d-block w-50 mx-auto mb-4 mb-md-0">
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h3 class="mb-3">
+                  engineed が独自で開発した<br>
+                  AWS実技試験の結果レポートが<br class="d-sm-none">閲覧可能！
+              </h3>
+              <p class="text-justify">
+                実際にAWS上に環境を構築するなど、実業務に近い要件が盛り込まれた engineed 独自の実技試験をユーザーに提供しAWSエンジニアとしての実力を可視化。結果レポートは、ユーザーのプロフィールとして公開しています
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <img src="img/serviceImg03.png" alt="" class="w-100">
+            </div>
+            <div class="col-md-7">
+              <h3 class="mb-2">
+                なかなか導入できていない・・・<br>
+                実技試験は engineed が実現！
+              </h3>
+              <p class="text-justify">
+                AWSエンジニアの能力を測ることは、アプリケーションエンジニアのようにコーディングテストに類するものがないため困難です。そこで engineed ではAWSエンジニアの実力を見極めるために適切な試験問題を用意し、ユーザーの解答に専門的視点からフィードバックを実施。自社で実技試験を用意する手間もありません
+              </p>
+            </div>
+          </div>
+          <h4 class="text-orange text-center mt-4 mt-md-0">実践的なスキルレベルを可視化しつつ、転職潜在層にリーチが可能</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases">
+      <div class="container">
+        <h2 class="mb-4">
+          CASES<br>
+          <span class="section-subtitle">導入実績</span>
+        </h2>
+        <h3 class="text-center mb-3">
+          <img src="img/engineedLogoNav.png" alt="" class="logo-inline">
+          を<br class="d-md-none">ご利用いただいている企業様
+        </h3>
+        <div class="py-2 py-md-5">
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/anotherworks.png" alt="株式会社Another works" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/atjc.jpg" alt="株式会社ATJC" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/base.jpg" alt="ベース株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/carpeDiem.jpg" alt="Carpe diem株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/classmethod.png" alt="クラスメソッド株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/Coincheck_logo_rgb_t.png" alt="コインチェック株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/conoc.jpg" alt="株式会社CONOC" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/dip_logo.png" alt="ディップ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/dss.png" alt="株式会社ディーエスエス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/evand.jpg" alt="Evand株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/fenrir.jpg" alt="フェンリル株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/fez.jpg" alt="株式会社フェズ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/galapagos.png" alt="株式会社ガラパゴス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/GMO_RESEARCH_logo.jpg" alt="GMOリサーチ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/gunosy_inc_logo.jpg" alt="株式会社Gunosy" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/ingage.png" alt="株式会社インゲージ
+                " class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/iyell.jpg" alt="iYell株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/lancers.png" alt="ランサーズ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/logo_leon.png" alt="株式会社レオンテクノロジー" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/lifematics.jpg" alt="ライフマティックス株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/linkAndMotivationGroup.jpg" alt="株式会社リンクアンドモチベーション" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/mercury_img.png" alt="株式会社マーキュリーリアルテックイノベーター" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/nttdata.png" alt="株式会社エヌ・ティ・ティ・データ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/payme.jpg" alt="株式会社ペイミー" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/potentialight.jpg" alt="株式会社ポテンシャライト" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/retrieva.jpg" alt="株式会社レトリバ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/RevCommLogo.png" alt="株式会社RevComm" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/s&ts.jpg" alt="誠信システムズ株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/scubism.png" alt="株式会社エスキュービズム" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/seraku.png" alt="株式会社セラク" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/serverworks.jpg" alt="株式会社サーバーワークス" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/simpline.jpg" alt="株式会社シンプライン" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/sophiatech.png" alt="株式会社ソフィアテック" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/startiasoft.png" alt="西安スターティアソフト株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/stransa.jpg" alt="株式会社ストランザ" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/tcdigital_logo.png" alt="株式会社テクノデジタル" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/Trainocate_logo.png" alt="トレノケート株式会社" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+            <div class="col px-xl-4 p-md-3 p-1">
+              <div class="d-flex align-items-center h-100">
+                <img src="img/tribeat.png" alt="株式会社トライビート" class="img-fluid" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-success font-weight-bold mt-3 mt-md-4">他にも多くの企業が<br class="d-sm-none">engineedを利用しています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pickUp">
+      <div class="container">
+        <h2 class="mb-4">
+          PICKUP<br>
+          <span class="section-subtitle">お客様の声</span>
+        </h2>
+        <div class="small-container">
+          <div class="d-md-flex justify-content-between">
+            <div class="d-flex align-items-center pickup-item">
+              <img src="img/pickup-woman.png" alt="">
+              <div>
+                <h3 class="mb-2 mb-md-3">
+                  本人の意欲や意向が<br class="d-sm-none">事前に確認できるため<br class="d-sm-none">ミスマッチのない採用を実現
+                </h3>
+                <div class="bg-light rounded-lg p-3 p-md-4">
+                  <p class="text-justify">
+                    候補者のプロフィールには、開発経験や資格情報以外に、<span class="text-orange font-weight-bold">AWSエンジニアとしてやりたいこと・挑戦したいことが記載</span>されているので、事前に情報を知ることでミスマッチの少ない採用面談が実現できました。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center pickup-item">
+              <img src="img/pickup-man.png" alt="">
+              <div>
+                <h3 class="mb-2 mb-md-3">
+                  AWS実技試験の結果で<br class="d-sm-none">経歴以外の実力を知れて<br class="d-sm-none">採用スピードアップ
+                </h3>
+                <div class="bg-light rounded-lg p-3 p-md-4">
+                  <p class="text-justify">
+                    候補者が<span class="text-orange font-weight-bold">設計したアーキテクチャや、実際にAWS上にシステムを構築する実技試験の結果レポートが閲覧</span>できるので、自社の実技試験はスキップ。選考のスピードが全体的に上がりました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <div class="container">
+        <h2 class="mb-4">
+          FLOW<br>
+          <span class="section-subtitle">ご利用開始までの流れ</span>
+        </h2>
+        <div class="bg-light rounded-lg small-container p-3 p-sm-4">
+          <div class="row">
+            <div class="col-3 col-sm-2 pr-1 pr-md-3">
+              <div class="flow-index-item">
+                <p class="flow-number">01</p>
+                <span class="flow-path"></span>
+                <span class="flow-dot"></span>
+                <span class="flow-circle"></span>
+              </div>
+            </div>
+            <div class="col-9 col-md-10 pr-1 pr-sm-3">
+              <div class="flow-description">
+                <h3 class="mb-2 text-black-50">お打ち合わせ・ご契約</h3>
+                <p class="mb-2 text-black-50">
+                  お問合わせ後、弊社営業担当よりご連絡します。<br>
+                  オンラインのお打ち合わせにてサービスに関わるご案内をさせていただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-sm-2 pr-1 pr-md-3">
+              <div class="flow-index-item">
+                <p class="flow-number">02</p>
+                <span class="flow-path"></span>
+                <span class="flow-dot"></span>
+                <span class="flow-circle"></span>
+              </div>
+            </div>
+            <div class="col-9 col-md-10 pr-1 pr-sm-3">
+              <div class="flow-description">
+                <h3 class="mb-2 text-black-50">アカウント発行</h3>
+                <p class="mb-2 text-black-50">
+                  ご契約後、5営業日以内に管理画面にログインいただくアカウントを発行します。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-sm-2 pr-1 pr-md-3">
+              <div class="flow-index-item">
+                <p class="flow-number">03</p>
+                <span class="flow-path"></span>
+                <span class="flow-dot"></span>
+                <span class="flow-circle"></span>
+              </div>
+            </div>
+            <div class="col-9 col-md-10 pr-1 pr-sm-3">
+              <div class="flow-description">
+                <h3 class="mb-2 text-black-50">キックオフの実施・初期設定</h3>
+                <p class="mb-2 text-black-50">
+                  アカウント発行後に、engineed事務局からキックオフについてご案内させていただきます。企業様の会社ページ・求人の作成についてサポートいたします。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-sm-2 pr-1 pr-md-3">
+              <div class="flow-index-item">
+                <p class="flow-number">04</p>
+                <span class="flow-path"></span>
+                <span class="flow-dot"></span>
+                <span class="flow-circle"></span>
+              </div>
+            </div>
+            <div class="col-9 col-md-10 pr-1 pr-sm-3">
+              <div class="flow-description">
+                <h3 class="mb-2 text-black-50">候補者リサーチ・アプローチ開始</h3>
+                <p class="mb-2 text-black-50">
+                  検索機能を活用して早速スカウトをお送りしましょう！スカウト作成のポイントなどはカスタマーサクセス専任のメンバーがきめ細かく丁寧にサポートします。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-sm-2 pr-1 pr-md-3">
+              <div class="flow-index-item">
+                <p class="flow-number">05</p>
+                <span class="flow-path"></span>
+                <span class="flow-dot"></span>
+                <span class="flow-circle"></span>
+              </div>
+            </div>
+            <div class="col-9 col-md-10 pr-1 pr-sm-3">
+              <div class="flow-description">
+                <h3 class="mb-2 text-black-50">定期面談の実施・フォローアップ</h3>
+                <p class="mb-2 text-black-50">
+                  engineed 事務局では定期的にフォローアップ面談を実施しております。<br>
+                  採用計画、採用活動のご状況に応じてアドバイスさせていただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-orange text-center mt-4 mt-md-5">
+          ダイレクトリクルーティングが初めての方でも安心してご利用いただけます
+        </h4>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="mb-4">
+          FAQ<br>
+          <span class="section-subtitle">よくある質問</span>
+        </h2>
+        <div class="small-container px-md-4">
+          <div class="faq-item mb-4 mb-md-5">
+            <div class="question mb-2 pl-1 pl-md-2">
+              <div class="d-flex align-items-center">
+                <img src="img/iconQuestion.svg" alt="">
+                <h3>どのようなエンジニアが登録していますか?</h3>
+              </div>
+            </div>
+            <div class="answer bg-light p-3 p-md-4 rounded-lg">
+              <p>
+                AWS認定保持者限定でご利用いただけるサービスになりますので、AWSの知識を保持しているエンジニアが登録しています。<br><br>
+                また、すでにエンジニアとしての経験やAWSエンジニアとしての実績を持つ、20代後半-30代後半の現役エンジニアの登録が大半を占めています。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item mb-4 mb-md-5">
+            <div class="question mb-2 pl-1 pl-md-2">
+              <div class="d-flex align-items-center">
+                <img src="img/iconQuestion.svg" alt="">
+                <h3>候補者の実技試験の成績を閲覧する場合、別途費用が発生しますか？</h3>
+              </div>
+            </div>
+            <div class="answer bg-light p-3 p-md-4 rounded-lg">
+              <p>
+                費用は一切かかりません。無料/無制限でユーザーの実技試験の結果を確認することができます。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item mb-4 mb-md-5">
+            <div class="question mb-2 pl-1 pl-md-2">
+              <div class="d-flex align-items-center">
+                <img src="img/iconQuestion.svg" alt="">
+                <h3>エンジニア採用のサポートはしてもらえますか？</h3>
+              </div>
+            </div>
+            <div class="answer bg-light p-3 p-md-4 rounded-lg">
+              <p>
+                貴社を担当するカスタマーサクセスが求人票やスカウトメールの添削、採用活動の状況に応じてフィードバック面談を実施いたします。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item mb-4 mb-md-5">
+            <div class="question mb-2 pl-1 pl-md-2">
+              <div class="d-flex align-items-center">
+                <img src="img/iconQuestion.svg" alt="">
+                <h3>候補者のレコメンド検索機能などはありますか？</h3>
+              </div>
+            </div>
+            <div class="answer bg-light p-3 p-md-4 rounded-lg">
+              <p>
+                engineed 実技試験成績優秀者や、転職意欲が高い候補者のご案内をメールにて配信しています。（不定期）
+              </p>
+            </div>
+          </div>
+          <div class="faq-item mb-4 mb-md-5">
+            <div class="question mb-2 pl-1 pl-md-2">
+              <div class="d-flex align-items-center">
+                <img src="img/iconQuestion.svg" alt="">
+                <h3>利用料金はいくらですか？</h3>
+              </div>
+            </div>
+            <div class="answer bg-light p-3 p-md-4 rounded-lg">
+              <p>
+                料金についての詳細は、
+                <a href="" class="inquiry-cta" onclick="setDefaultContactType('documentRequest')" id="nav-cta-button" data-toggle="modal" data-target="#inquiryFormModal">
+                  こちら
+                </a>
+                から資料のダウンロードをお願いします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ctas" class="bg-navy text-white">
+      <div class="container">
+        <h2 class="text-center text-white mb-4">
+          <img src="img/engineedLogoWhite.png" alt="" class="logo-inline">
+          について<br class="d-sm-none">もっと詳しく知る
+        </h2>
+        <div class="small-container">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <div>
+                <p class="text-center mb-2">
+                  オンラインで気軽に相談する！
+                </p>
+                <div class="" onclick="setDefaultContactType('onlineMeeting')" data-toggle="modal" data-target="#inquiryFormModal">
+                  <div class="d-flex align-items-center justify-content-center cta mx-auto w-100 bg-green-light inquiry-cta" id="">
+                    <a class="disabled text-center" href="" id="nav-cta-button">
+                      <div class="d-flex align-items-center">
+                        <img src="img/iconMessageWhite.svg" alt="" class="mr-2">
+                        <span class="emphasis">無料で相談してみる</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <p class="text-center mb-2">
+                  engineedが5分でわかる！
+                </p>
+                <div class="" onclick="setDefaultContactType('documentRequest')" data-toggle="modal" data-target="#inquiryFormModal">
+                  <div class="d-flex align-items-center justify-content-center cta mx-auto bg-orange w-100 inquiry-cta" id="">
+                    <a class="disabled text-center" href="" id="nav-cta-button">
+                      <div class="d-flex align-items-center">
+                        <img src="img/iconDocumentOrange.svg" alt="" class="mr-2">
+                        <span class="emphasis text-white">資料ダウンロード (無料)</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="container">
+        <h2 class="text-center">
+          運営会社
+        </h2>
+        <a href="https://anti-pattern.co.jp" target="_blank">
+          <img src="img/ap_logo.png" alt="" class="ap-logo">
+        </a>
+        <p class="text-center mb-3">株式会社アンチパターン</p>
+        <p class="font-italic text-center">
+          株式会社アンチパターンは、「日本のソフトウェアエンジニアを憧れの職業へ」を理念に<br>
+          エンジニアによるエンジニアのための事業企画・開発を行なっているスタートアップです。
+        </p>
+        <div class="aws-apn-container row">
+          <div class="col-md-6 p-0 px-md-3">
+            <div class="d-md-flex align-items-center mb-4">
+              <img src="img/aws-select-tier-services.png" alt="" class="aws-apn-badge mr-md-3">
+              <div>
+                <p>
+                  株式会社アンチパターンは<br>「AWS セレクトティアサービスパートナー」に認定されています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 px-md-3">
+            <div class="d-md-flex align-items-center">
+              <img src="img/aws-qualified-software.png" alt="" class="aws-apn-badge mr-md-3">
+              <div>
+                <p>
+                  engineed は、2021年10月20日に「AWS Foundational Technical Review (FTR)」を通過し、「AWS 認定ソフトウェア (AWS Qualified Software)」に認定されています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="page-footer font-small px-sm-5 pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <img src="img/engineedLogoWhite.png" alt="engineed" width="200px" class="mb-2">
+          <p class="pl-md-1 mb-1">株式会社アンチパターン</p>
+          <p class="pl-md-1">〒107-0062 東京都港区南青山3丁目15-9 <br class="d-sm-none">MINOWA表参道3階</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3 pl-md-0">
+          <h5 class="text-uppercase mb-2">利用規約</h5>
+          <ul class="list-unstyled">
+            <li class="mb-1">
+              <a href="https://info.engineed.io/terms/engineer/">ユーザー利用規約</a>
+            </li>
+            <li>
+              <a href="https://info.engineed.io/terms/company/">法人利用規約</a>
+            </li>
+            <li>
+              <a href="https://info.engineed.io/legal/" target="_blank">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2022
+      <a href="https://anti-pattern.co.jp">Anti-Pattern Inc.</a>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="inquiryFormModal" tabindex="-1" role="dialog" aria-labelledby="inquiryFormModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="inquiryFormModalTitle">engineedに関するお問い合わせ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="inquiryForm">
+            <div class="form-group">
+              <label for="">お問い合わせ目的</label><font style="color:red">※</font>
+              <div class="row">
+                <div class="px-3">
+                  <label for="contact_type1" class="mb-0 contact_type_label">
+                    <input type="radio" id="contact_type1" name="contact_type" value="1" required>
+                      オンライン無料相談
+                  </label>
+                </div>
+                <div class="px-3">
+                  <label for="contact_type2" class="mb-0 contact_type_label">
+                    <input type="radio" id="contact_type2" name="contact_type" value="2">
+                      無料で資料請求
+                  </label>
+                </div>
+                <div class="px-3">
+                  <label for="contact_type3" class="mb-0 contact_type_label">
+                    <input type="radio" id="contact_type3" name="contact_type" value="3">
+                    その他
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">お名前</label><font style="color:red">※</font>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control mr-2"
+                  name="last_name"
+                  aria-describedby=""
+                  placeholder="姓"
+                  required
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="first_name"
+                  aria-describedby=""
+                  placeholder="名"
+                  required
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">メールアドレス</label><font style="color:red">※</font>
+              <input 
+                type="email"
+                class="form-control"
+                name="email"
+                aria-describedby=""
+                placeholder=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="">会社名</label><font style="color:red">※</font>
+              <input
+                type="text"
+                class="form-control"
+                name="company_name"
+                aria-describedby=""
+                placeholder=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="">部署名・役職名</label>
+              <input
+                type="text"
+                class="form-control"
+                name="department"
+                aria-describedby=""
+                placeholder=""
+              >
+            </div>
+            <div class="form-group">
+              <label for="">電話番号</label><font style="color:red">※</font>
+              <input 
+                type="tel"
+                class="form-control"
+                name="tel"
+                aria-describedby=""
+                placeholder=""
+                required
+              >
+            </div>
+            <div class="form-group">
+              <label for="">その他ご要望等記載事項</label>
+              <textarea
+                class="form-control"
+                name="remarks"
+                rows="3"
+                placeholder=""
+              ></textarea>
+            </div>
+            <p class="mb-2"><font style="color:red">※</font>は必須入力項目です。</p>
+            <button type="submit" class="btn btn-primary w-100 py-2" id="inquiry_send_button">送信する</button>
+            <div class="modal-footer">
+              <p class="small">engineedは、株式会社アンチパターンが運営するサービスです。送信ボタンを押すことは、弊社の<a href="https://anti-pattern.co.jp/legal/">個人情報の取扱いについて</a>に同意したとみなします。</p>
+            </div>
+          </form>
+          <div id="inquiryThanksMessage" style="display: none;">
+            <p>お問い合わせありがとうございました。<br>担当からご連絡させていただきますのでお待ちください。</p>
+          </div>
+          <div id="inquiryErrorMessage" style="display: none;">
+            <p style="color:red">予期せぬエラーが発生しました。<br>大変申し訳ございませんが、別途<a style="color:red; text-decoration-line: underline;" href="https://docs.google.com/forms/d/e/1FAIpQLSeB7lL14op6S0mXuHBXtTyG_sSBteVDPu0tOOtjmI3fW8DJfw/viewform?usp=sf_link">お問い合わせフォーム</a>か<a href="tel:0368856140" style="color:red; text-decoration-line: underline;">お電話(03-6885-6140)</a>へお問い合わせくださいませ。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="loading">
+    <div id="spinner" class="d-flex justify-content-center align-items-center">
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+    function isProduction() {
+      const hostname = location.hostname;
+      const prod_hostname = 'info.engineed.io';
+      return hostname === prod_hostname
+    }
+    function getPostUrl() {
+      const prod_api = 'https://script.google.com/macros/s/AKfycbyQ2HxHPYpyc3NY-iutr4tzsa4TUok07CCDl72eOmo1MWnRpK_aSIcyo6gy-6CLEL5z/exec';
+      const stg_api  = 'https://script.google.com/macros/s/AKfycbxTMwEsnP4upAthyN0Frzm_oiaRDGGOPcjr9jUrcjoAjDHnctodZQLPx51qmn_ZvuCsEA/exec';
+      return isProduction() ? prod_api : stg_api;
+    }
+    function setDefaultContactType(contactType) {
+      const contactTypeButtons = document.querySelectorAll('input[name=contact_type]')
+      for (contactTypeInput of contactTypeButtons) {
+        if (contactType == "onlineMeeting" && contactTypeInput.value == '1') {
+          contactTypeInput.checked = true
+          continue
+        }
+        if (contactType == "documentRequest" && contactTypeInput.value == '2') {
+          contactTypeInput.checked = true
+          continue
+        }
+      }
+    }
+    $('#inquiryForm').submit(function(event) {
+      $('#loading ,#spinner').css('display','block');
+      event.preventDefault();
+      $("#inquiry_send_button").prop("disabled", true);
+      const postUrl = getPostUrl();
+      var postData = $('#inquiryForm').serialize();
+      var posting = $.post(postUrl, postData)
+        .done(function(data) {
+          $('#loading ,#spinner').css('display','none');
+          $('#inquiryForm').hide();
+          $('#inquiryThanksMessage').show();
+        }).fail(function() {
+          $('#loading ,#spinner').css('display','none');
+          $('#inquiryErrorMessage').show();
+          $("#inquiry_send_button").prop("disabled", false);
+        });
+    });
+    const mainVisual = document.getElementById('mainVisual');
+    const mainVisualHeight = mainVisual.offsetHeight;
+    const nav = document.getElementById('nav')
+    const navHeight = nav.offsetHeight;
+    const toggleButton = document.getElementById('toggleButton')
+    let hamburgerIsOpen = false;
+    toggleButton.addEventListener('click', () => {
+      let scrollPosition = window.scrollY;
+      let isAboveMainVisual = navHeight + scrollPosition <= mainVisualHeight;
+      // ハンバーガーが開いているかどうかのBooleanを反転
+      hamburgerIsOpen = hamburgerIsOpen ? false : true
+      if(hamburgerIsOpen) {
+        // ハンバーガーが開いたらbg-navyにする
+        nav.classList.add('bg-navy')
+        return
+      } 
+      if(!hamburgerIsOpen && isAboveMainVisual) {
+        // ハンバーガーが閉じるとき、かつ、MainVisualより上にあるときはbg-navyを外す
+        nav.classList.remove('bg-navy')
+        return
+      }
+    })
+    window.addEventListener('scroll', () => {
+      let scrollPosition = window.scrollY;
+      let isAboveMainVisual = navHeight + scrollPosition <= mainVisualHeight;
+      if (hamburgerIsOpen) {
+        // ハンバーガーが開いていたら、bg-navyのままで何もしない
+        return
+      }
+      if (isAboveMainVisual) {
+        // MainVisualより上だったらbg-navyを外す
+        nav.classList.remove('bg-navy')
+        return
+      }
+      if (!isAboveMainVisual) {
+        // MainVisualより下だったらbg-navyにする
+        nav.classList.add('bg-navy')
+        return
+      }
+    })
+  </script>
+</body>
+</html>
